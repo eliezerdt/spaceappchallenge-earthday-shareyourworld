@@ -1,0 +1,3 @@
+{"ts":1366493991249,"silentsave":true,"restoring":false,"patch":[[]],"length":0}
+{"contributors":[],"silentsave":false,"ts":1366494044543,"patch":[[{"diffs":[[1,"{\n    \"name\": \"EarthDay-ShareYourWorld\",\n    \"description\": \"spaceappchallenge-earthday-shareyourworld project\",\n    \"version\": \"0.0.1\",\n    \"private\": true,\n    \"dependencies\": {\n        \"express\": \"3.x\"\n    }\n}"]],"start1":0,"start2":0,"length1":0,"length2":212}]],"length":212,"saved":false}
+{"ts":1366494224742,"patch":[[{"diffs":[[0,"tion\": \""],[1,"https://github.com/eliezerdt/"],[0,"spaceapp"]],"start1":53,"start2":53,"length1":16,"length2":45},{"diffs":[[0,"orld"],[-1," project"],[0,"\",\n "]],"start1":127,"start2":127,"length1":16,"length2":8}]],"length":233,"saved":false}
