@@ -1,2 +1,0 @@
-{"ts":1366494122465,"silentsave":true,"restoring":false,"patch":[[]],"length":0}
-{"contributors":[],"silentsave":false,"ts":1366494102550,"patch":[[{"diffs":[[1,"exports.findAll = function(req, res) {\n    res.send([{name:'wine1'}, {name:'wine2'}, {name:'wine3'}]);\n};\n \nexports.findById = function(req, res) {\n    res.send({id:req.params.id, name: \"The Name\", description: \"description\"});\n};"]],"start1":0,"start2":0,"length1":0,"length2":230}]],"length":230,"saved":false}
