@@ -1,0 +1,61 @@
+{
+	"type": "Collection",
+	"properties": {
+		"length": {
+			"name": "length",
+			"type": "number",
+			"typeLabel": "number",
+			"required": false,
+			"id": "length",
+			"order": 0
+		},
+		"latitude": {
+			"name": "latitude",
+			"type": "number",
+			"typeLabel": "number",
+			"required": false,
+			"id": "latitude",
+			"order": 1
+		},
+		"date": {
+			"name": "date",
+			"type": "number",
+			"typeLabel": "number",
+			"required": false,
+			"id": "date",
+			"order": 2
+		},
+		"value": {
+			"name": "value",
+			"type": "number",
+			"typeLabel": "number",
+			"required": false,
+			"id": "value",
+			"order": 3
+		},
+		"country": {
+			"name": "country",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "country",
+			"order": 4
+		},
+		"region": {
+			"name": "region",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "region",
+			"order": 5
+		},
+		"description": {
+			"name": "description",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "description",
+			"order": 6
+		}
+	}
+}

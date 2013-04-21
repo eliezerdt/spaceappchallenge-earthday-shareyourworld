@@ -1,0 +1,29 @@
+{
+	"type": "UserCollection",
+	"properties": {
+		"urlProfileFacebook": {
+			"name": "urlProfileFacebook",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "urlProfileFacebook",
+			"order": 0
+		},
+		"idFacebook": {
+			"name": "idFacebook",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "idFacebook",
+			"order": 1
+		},
+		"email": {
+			"name": "email",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "email",
+			"order": 2
+		}
+	}
+}
