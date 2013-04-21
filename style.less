@@ -1,0 +1,389 @@
+
+@import url('styles/reset.css');
+@import url('styles/text.css');
+@import url('styles/960.css');
+
+@import url('styles/component.css');
+@import url('styles/jquery.qtip.min.css');
+@import url('styles/chronoline.css');
+
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+h1, h2, h3, h4, h5, h6{
+	font-weight:normal;
+}
+
+.fright{
+	float:right;
+	display:inline;
+}
+.fleft{
+	float:left;
+	display:inline;
+}
+
+
+/*defining variables*/
+@orange: #F39939;
+@green: #85B200;
+@white: #fff;
+@black20: rgba(0,0,0,0.2);
+@black80: rgba(0,0,0,0.8);
+
+a{
+	color:@green;
+	text-decoration:none;
+	outline:none;
+}
+
+.cover{
+	-moz-background-size:cover!important;
+	-webkit-background-size:cover!important;
+	-o-background-size:cover!important;
+	background-size:cover!important;
+}
+.bs(@x, @y, @b, @c){
+	-moz-box-shadow:@x @y @b @c;
+	-webkit-box-shadow:@x @y @b @c;
+	-o-box-shadow:@x @y @b @c;
+	box-shadow:@x @y @b @c;
+}
+.transition(@m, @t, @e){
+	-moz-transition:@m @t @e;
+	-webkit-transition:@m @t @e;
+	-o-transition:@m @t @e;
+	transition:@m @t @e;
+}
+.radius(@r){
+	-moz-border-radius:@r;
+	-webkit-border-radius:@r;
+	-o-border-radius:@r;
+	border-radius:@r;
+}
+.all{
+	width:100%;
+	position:relative;
+}
+body{
+	font-family: 'Open Sans', sans-serif;
+	background:@white;
+	font-size:14px;
+}
+address{
+	font-style:normal;
+}
+/*@header*/
+
+header{
+	position: fixed;
+	top:0;
+	z-index:1000;
+	width:100%;
+	height:60px;
+	background: #fff;
+	.bs(2px, 2px, 4px, @black20);
+	.logo{
+		width: 20%;
+		.fleft;
+		.bs(1px, 0px, 0px, @black20);
+		height:60px;
+		h1{
+			padding:8px;
+			img{
+				max-width:100%;
+			}
+		}
+	}
+	nav#main-nav{
+		width: 80%;
+		.fleft;
+		.layers{
+			padding:8px 0 0 20px;
+			.fleft
+		}
+		.pages{
+			padding:20px;
+			.fright;
+			ul{
+				li{
+					list-style:none;
+					.fleft;
+					&.current{
+						background:@white;
+					}
+				}
+			}
+		}
+	}
+}
+
+/* Drop downs */
+.dl-menu, .dl-submenu{
+			margin-bottom:0px;
+		}
+.dl-menu li, .dl-submenu li{
+	margin:0px;
+}
+
+/* Main Menu (layers) */
+#dd-main-menu.dl-menuwrapper button {
+	background: @green;
+}
+#dd-main-menu.dl-menuwrapper button:hover,
+#dd-main-menu.dl-menuwrapper button.dl-active,
+#dd-main-menu.dl-menuwrapper ul {
+	background: @green;
+}
+.dl-menuwrapper button:hover,
+.dl-menuwrapper button.dl-active,
+.dl-menuwrapper ul {
+	background: #aaa;
+}
+.dl-menuwrapper button.main-menu {
+	border: none!important;
+	width:auto!important;
+	text-indent:inherit!important;
+	height: 45px;
+	position: relative;
+	cursor: pointer;
+	outline: none;
+	color: @white;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	padding-right:20px;
+}
+.dl-menuwrapper button.main-menu:after {
+	background: none;
+	box-shadow: none;
+	position: relative!important;
+	top: 0;
+	left:10px;
+	line-height: 46px;
+	font-family: 'icomoon';
+	speak: none;
+	-webkit-font-smoothing: antialiased;
+	content: " \e000";
+}
+
+/* Options menu */
+#dl-menu.dl-menuwrapper.options-menu button {
+	background: @black80;
+}
+#dl-menu.dl-menuwrapper button:hover,
+#dl-menu.dl-menuwrapper button.dl-active,
+#dl-menu.dl-menuwrapper ul {
+	background: @black80;
+}
+#dl-menu.dl-menuwrapper ul {
+	width:220px;
+}
+.dl-menuwrapper button:hover,
+.dl-menuwrapper button.dl-active,
+.dl-menuwrapper ul {
+	background: #aaa;
+}
+
+.btn-upload{
+	background: @green url(images/ico_photos.png) top right no-repeat!important;
+	&:hover{
+		background: @orange url(images/ico_photos.png) top right no-repeat!important;
+	}
+}
+
+#container{
+	position: absolute;
+	width:100%;
+	height:100%;
+	overflow: hidden;
+}
+
+.container_960{
+	margin: auto;
+	width:960px;
+	height:auto;
+}
+	
+#map{
+	background:#ccc;
+	top:60px;
+	position:absolute;
+	width:100%;
+	height:100%;
+}
+#tools{
+	position:absolute;
+	top:80px;
+	left:100px;
+}
+
+/* Timelines */	
+#timeline{
+	width:100%;
+	.bs(-2px, -2px, 4px, @black20);
+	background:@white;
+	position: fixed;
+	bottom:0;
+	height:auto;
+}
+
+/* Videos */
+#video{
+	margin-top:100px;
+	video{
+		margin-left:130px;
+	}
+}
+.grid{
+	margin: 0 auto;
+	width:100%;
+	height: 900px;
+	position: absolute;
+	overflow: hidden;
+	background:url(images/bg_grid.png) repeat;
+}
+	.bg_cover{
+		min-height: 100%;
+		min-width: 320px;
+		width: 100%;
+		height: auto;
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index:-1000;
+	}
+	
+@media screen and (max-width: 1024px) { /* Specific to this particular image */
+	img.bg_cover{
+		left: 50%;
+		margin-left: -900px;   /* 50% */
+	}
+}			
+	
+
+.main-content{
+	margin-top:40px;
+}
+
+.list-menu{
+	width:100%;
+	li{
+		list-style:none;
+		margin-bottom:2px;
+		a {
+			color:@white;
+			background:@green;
+			padding:10px;
+			display:block;
+		}
+	}
+}
+
+/*parrallax styles*/
+
+.float-left{
+	float: left;	
+	margin: 0 0 0 20px;
+}
+
+.float-right{
+	float: right;
+	margin: 0 20px 0 0;
+}
+
+.center{
+	font-size: 2.5em;
+	padding: 80px 0 0 0;
+	text-align: center;
+}
+
+#nav{
+	list-style: none;
+	position: fixed;
+	top: 80px;
+	right: 20px;
+	text-align:right;
+	z-index:1000;
+}
+
+#nav li{
+	margin: 0 0 20px 0;	
+	a {
+		background: @green;
+		padding:10px;
+		color: @white;
+		margin-bottom:2px;
+		outline: none;
+	}
+}
+
+
+#header, #intro, #second{
+	width: 100%;
+}
+
+#intro{
+	background:url(images/firstBG.jpg) 50% 0 no-repeat fixed;
+	color: white;
+	height: 800px;
+	margin: 0 auto;
+	padding: 0;
+		.story .float-left{
+			width:400px!important;
+		}
+		h1{
+			font-size:48px;
+			line-height:40px;
+		}
+}
+
+#second{
+	background: url(images/secondBG.jpg) 50% 0 no-repeat fixed;
+	color: white;
+	height: 1300px;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 0;
+	.bg{
+		background: url(images/trainers.png) 50% 0 no-repeat fixed;
+		height: 1300px;
+		margin: 0 auto;
+		padding: 0;
+		position: absolute;
+		width: 900px;
+		z-index: 200;
+	}
+}
+
+#third{
+	background: url(images/thirdBG.jpg) 50% 0 no-repeat fixed;
+	color: @green;
+	height: 900px;
+	padding: 150px 0 0 0;
+	p{
+		color:#333;
+	}
+}
+
+#fourth{
+	background: url(images/fourthBG.jpg) 50% bottom no-repeat fixed;
+	height:650px;
+	padding:100px 0 0 0;
+	.other-info{
+		margin-top:60px;
+	}
+}
+
+.story{
+	margin: 0 auto;
+	min-width: 980px;
+	overflow: auto;
+	width: 980px;
+}
+
+.story .float-left, .story .float-right{
+	padding: 100px 0 0 0;
+	position: relative;
+	width: 350px;	
+}
+
+@import "styles/upload.less";
